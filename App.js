@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
 
-
+ çlllll kk
 
 export default function App() {
   // Mapeamento de teclas
