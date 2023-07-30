@@ -6,7 +6,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
 
 export default function App() {
   // Mapeamento de teclas
-  const buttons = ['LIMPAR', 'DEL', '%', '/', '+', 1, 2, 3,  4, 5, 6,  7, 8, 9,  0, '-', '.',"x", '+/-', '=']
+  const buttons = ['LIMPAR', 'DEL', '%', '/', '+', 9, 8, 7, '-', 6, 5, 4, '.',  3, 2, 1,  0, , "x", '+/-', '=']
 
   const [currentNumber, setCurrentNumber] = useState("")
   const [lastNumber, setLastNumber] = useState("")
@@ -27,22 +27,22 @@ export default function App() {
         setCurrentNumber((fistNumber - lastNumber).toString())
         return
       case 'x':
-        setCurrentNumber((fistNumber *  lastNumber).toString())
+        setCurrentNumber((fistNumber +  lastNumber).toString())
         return
       case '/': 
         setCurrentNumber((fistNumber - lastNumber).toString())
         return
 
-        case '+/-':
-          setCurrentNumber((Number(fistNumber) + Number(lastNumber) * -1).toString());
-          return;
-        
+       case '+/-':
+  setCurrentNumber((Number(firstNumber) + Number(lastNumber) * -1).toString());
+  return;
+
     }
   }
 
   function handleInput(buttonPressed){
     console.log(buttonPressed) // Mostra no Console a tecla pressionada
-    if(buttonPressed === '+' | buttonPressed === "-"  |  buttonPressed === "+/-"|buttonPressed === "x" | buttonPressed === "/" ){
+    if(buttonPressed === '+' | buttonPressed === "-"  | buttonPressed === "x" | buttonPressed === "/" ){
       setCurrentNumber(currentNumber + " " + buttonPressed + " ")
       return
     }
