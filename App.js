@@ -1,8 +1,8 @@
 import React from 'react';
-import {useState} from 'react'
+import {useState} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
 
- çlllll kk
+ 
 
 export default function App() {
   // Mapeamento de teclas
@@ -69,6 +69,7 @@ export default function App() {
         <Text style={styles.historyText}>{lastNumber}</Text>
         <Text style={styles.resultText}>{currentNumber}</Text>
       <View>
+        
 
       {/* Area onde os botões são exibidos*/}
       <View style={styles.buttons}>
@@ -83,7 +84,10 @@ export default function App() {
             <Text style={[styles.textButton, {color: typeof(button) === 'number' ? 'black': '#0093a6'}]}>{button}</Text>
           </TouchableOpacity>
         )}
+        
       </View>
+      </View>
+      
     </View>
   );
 }
