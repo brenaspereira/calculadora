@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {useState} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
@@ -101,39 +102,58 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'justify', 
+    backgroundColor: "black",
+
+   
+    
+    
   },
   results: {
-    flex: 2,
+    flex: 1,
     justifyContent: "center",
-    backgroundColor: "#f5f5f5"
+    backgroundColor: '#191970',
+    
+    
   },
   resultText: {
-    color: "#282F38",
-    fontSize: 32,
+    backgroundColor: '#191970',
+    color: "white",
+    fontSize: 45,
     fontWeight: "bold",
-    padding: 12,
-    textAlign: "right"
+    padding: 20,
+    textAlign: "right",
+
+  
   },
   historyText:{
-    color: "#7c7c7c",
+    color: "white",
     fontSize: 20,
     marginRight: 10,
     alignSelf: 'flex-end',
+    
+
   },
   buttons: {
     flexDirection: 'row',
     flexWrap: 'wrap',
+    color: "white",
+
+    
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: '#4b0082',
     alignItems: 'center',
     justifyContent: 'center',
-    minWidth: 90, 
-    minHeight: 90,
-    flex: 2,
+    minWidth: 120, 
+    minHeight: 141,
+
+    
   },
   textButton: {
-    color: "#7c7c7c",
+    color: "#ff8c00",
     fontSize: 20,
+
+    
   } 
 });
