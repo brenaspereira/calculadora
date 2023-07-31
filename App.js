@@ -49,7 +49,7 @@ export default function App() {
     console.log(buttonPressed) // Mostra no Console a tecla pressionada
     if(buttonPressed === '+' |  buttonPressed === "%" | buttonPressed === "-" |  buttonPressed === "+/-" | buttonPressed === "*" | buttonPressed === "/" ){
       setCurrentNumber(currentNumber + " " + buttonPressed + " ")
-      return
+      return  
     }
     switch(buttonPressed){
       case 'DEL':
