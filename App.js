@@ -27,7 +27,7 @@ export default function App() {
       case '-': 
         setCurrentNumber((fistNumber - lastNumber).toString())
         return
-      case 'x':
+      case '*':
         setCurrentNumber((fistNumber *  lastNumber).toString())
         return
       case '/': 
@@ -43,7 +43,7 @@ export default function App() {
 
   function handleInput(buttonPressed){
     console.log(buttonPressed) // Mostra no Console a tecla pressionada
-    if(buttonPressed === '+' | buttonPressed === "-"  | buttonPressed === "x" | buttonPressed === "/" ){
+    if(buttonPressed === '+' | buttonPressed === "-"  | buttonPressed === "*" | buttonPressed === "/" ){
       setCurrentNumber(currentNumber + " " + buttonPressed + " ")
       return
     }
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     minWidth: 120, 
-    minHeight: 141,
+    minHeight: 142,
 
     
   },
