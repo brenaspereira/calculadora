@@ -33,6 +33,10 @@ export default function App() {
       case '/': 
         setCurrentNumber((fistNumber / lastNumber).toString())
         return
+        case '%': 
+        setCurrentNumber((Number(lastNumber)  *  Number(fistNumber)   / 100).toString());
+        return
+        
 
        case '+/-':
   setCurrentNumber((Number(fistNumber) + Number(lastNumber) * -1).toString());
@@ -43,7 +47,7 @@ export default function App() {
 
   function handleInput(buttonPressed){
     console.log(buttonPressed) // Mostra no Console a tecla pressionada
-    if(buttonPressed === '+' | buttonPressed === "-" |  buttonPressed === "+/-" | buttonPressed === "*" | buttonPressed === "/" ){
+    if(buttonPressed === '+' |  buttonPressed === "%" | buttonPressed === "-" |  buttonPressed === "+/-" | buttonPressed === "*" | buttonPressed === "/" ){
       setCurrentNumber(currentNumber + " " + buttonPressed + " ")
       return
     }
